@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>ListadeCompras</title>
+
+    <!-- ListadeCompras references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="app">
+        <section id="header">
+            <h1>Lista de Compras</h1>
+        </section>
+        <section id="content">
+            <div id="items">
+
+            </div>
+            <div id="novoItemHolder">
+                <input type="text" id="novoItem" placeholder="Nome e qtde. do produto" />
+                <button id="btnAddItem">Adicionar</button>
+            </div>
+            <div id="botalLimparHolder">
+                <button id="btnLimpar">Limpar lista</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
